@@ -1,0 +1,10 @@
+public class Zadacha3 {
+
+public static void main(String[] args) {
+    System.out.println("a * (b + (c / d)) = " + PrintSumm (5, 7, 10, 5));
+}
+    static double PrintSumm ( double a, double b, double c, double d){
+
+        return a * (b + (c / d));
+    }
+}

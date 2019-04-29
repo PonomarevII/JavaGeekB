@@ -1,0 +1,22 @@
+public class Zadacha2 {
+    public static void main(String[] args) {
+        int a = 20;
+        float b = 2.25f;
+        byte c = 110;
+        short d = 32767;
+        long e = -92233720368L;
+        float f = 545.99f;
+        double g = -12376.1237;
+        char h = 5459;
+        boolean i = true;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+        System.out.println(h);
+        System.out.println(i);
+    }
+}

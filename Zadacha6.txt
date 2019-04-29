@@ -1,0 +1,14 @@
+public class Zadacha2 {
+    public static void main(String[] args) {
+        System.out.println(Numbers(0));
+
+    }
+    static boolean Numbers(int a) {
+
+        if (a >=0 )
+            return true;
+        else return false;
+
+                }
+
+}
