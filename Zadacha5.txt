@@ -1,0 +1,14 @@
+public class Zadacha5 {
+    public static void main(String[] args) {
+        Numbers(-6);
+
+    }
+    static void Numbers(int a) {
+
+        if (a >=0 )
+            System.out.println("Положительное число а") ;
+        else
+            System.out.println("Отрицательное число а") ;
+    }
+
+}

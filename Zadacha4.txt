@@ -1,0 +1,13 @@
+public class Zadacha4 {
+    public static void main(String[] args) {
+        System.out.println(Numbers(9, 8));
+
+    }
+    static boolean Numbers(int a, int b) {
+        int sum = a +b;
+        if (sum >=10 && sum <=20)
+        return true;
+        else return false;
+    }
+
+}

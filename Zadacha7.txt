@@ -1,0 +1,12 @@
+public class Zadacha7 {
+    public static void main(String[] args) {
+        Name("Фанзиль");
+
+    }
+    public static void Name(String name) {
+
+        System.out.println("Привет, " + name + "!");
+
+                }
+
+}
