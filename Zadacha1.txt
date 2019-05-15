@@ -1,4 +1,5 @@
-// Добрый день. Помогите с этой задачкой. В чем у меня проблема? Почему зацикливается 
+Переписал, но опять какая то проблема с фигурными скобками. Фазиль, помогите пожалуйста
+// Добрый день. Помогите с этой задачкой. В чем у меня проблема? Почему зацикливается
 import java.util.Random;
 import java.util.Scanner;
 
@@ -6,41 +7,47 @@ public class Lesson3 {
     public static void main(String[] args) {
         System.out.println("Привет! Угадай цифру!");
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+
         do {
             Random r = new Random();
             int x = r.nextInt(9);
-            int f;
+            int i;
 
 
             for (int i = 1; i <= 3; i++) {
 
-
+                int a = sc.nextInt();
                 if (a == x) {
                     System.out.println(a + " = " + x + " Угаданно!");
                     break;
+
+                } else if (a > x) {
+                    System.out.println(a + "  больше чем загаданое число");
+                } else if (a < x) {
+                    System.out.println(a + " меньше чем загаданое число");
                 }
-                else if (a > x) System.out.println(a + "  больше");
-                else if (a < x) System.out.println(a + " меньше");
 
-                if (i == 3) System.out.println("Неверно: " + x);
+                if (i == 3) {
+                    System.out.println("Неверно, : " + x);
+                }
+
+
+                System.out.println("Сыграем еще раз? 1 - Да / 0 - Нет");
             }
+            while (r.nextInt() == 1) ;
 
-            System.out.println("Сыграем еще раз? 1 - Да / 0 - Нет");
 
-            int rep = a;
-            while ((rep < 0) || (rep > 1)) {
-                System.out.println("Введите корректное число: 1 - Да / 0 - Нет");
-                rep = a;
-            }
-
+            int rep = sc.nextInt();
             if (rep == 1) {
-                System.out.println("Starting new game...");
-            }
-            else {
-                System.out.println("Good bye!");
+                System.out.println("Сыграем еще раз.");
+            } else {
+                System.out.println("Пока!");
                 return;
             }
-        } while (true);
+
+        }
+
     }
+
+
 }
