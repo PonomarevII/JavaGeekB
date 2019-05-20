@@ -1,0 +1,17 @@
+package lesson5;
+
+public class MainClass {
+    public static void main(String[] args) {
+        Employees[] employees = new Employees[5];
+        employees[0] = new Employees("Ivanov","ivanov@mail.ru",54);
+        employees[1] = new Employees("Ivanov1","ivanov1@mail.ru",25);
+        employees[2] = new Employees("Ivanov2","ivanov2@mail.ru",44);
+        employees[3] = new Employees("Ivanov3","ivanov3@mail.ru",29);
+        employees[4] = new Employees("Ivanov4","ivanov4@mail.ru",47);
+        for (int i = 0; i < employees.length; i++) {
+            if(employees[i].getAge() > 40){
+                employees[i].printInfo();
+            }
+        }
+    }
+}
